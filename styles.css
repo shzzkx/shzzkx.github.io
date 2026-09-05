@@ -43,7 +43,9 @@ and maybe get rid of above media
   --accent_three: #432719;
   --text: #21211f;
   --footer: #432719;
-  --bg: #f5e1c8;
+  --bg: #3F826D;
+  /*3F826D - aqua, 878472 - gray,
+  709775 - light green, 3E5641 - dark green*/
   --dark_white: #D6d6d6;
   --white: #f9faf4;
   --black: #21211f;
@@ -90,7 +92,7 @@ body {
   background-color: var(--body);
   color: var(--text);
   font-family: Satoshi, sans-serif;
-  margin: 0; /*Previously 7vh*/
+  margin: 7vh; /*Previously 7vh*/
   padding: 0;
   box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -114,7 +116,7 @@ html {
   z-index: 100;
   background-color: var(--topnav);
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Style the links inside the navigation bar */
@@ -125,6 +127,7 @@ html {
   padding: 2vh 2vw;
   text-decoration: none;
   font-size: 2.5vh;
+  font-weight: 400;
   transition: all 0.2s ease-out;
 }
 
@@ -207,7 +210,7 @@ header {
 }
 .name {
   font-family: Cabinet Grotesk, serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16vh;
   margin: 10vh 0 0 0;
   padding: 0;
@@ -218,8 +221,8 @@ header {
   /*add animation here*/
 }
 .header p {
-  font-family: Inter;
   font-size: 3vh;
+  font-weight: 100;
 }
 @media screen and (max-width: 1250px) {
   header {
@@ -438,7 +441,7 @@ show ongoing or finished*/
 }
 .proj .title {
   font-family: Cabinet Grotesk;
-  margin: 0 0 0.2vw 0;
+  margin: 0 0 0.2vh 0;
   padding: 0;
   font-size: 6vh;
 }
