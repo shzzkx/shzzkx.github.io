@@ -185,11 +185,12 @@ header {
   flex-direction: row;
   justify-content: center;
   padding: 0 2vh;
+  width: fit-content;
 }
 .header-text {
   margin: 0 0 0 6vh;
   padding: 0;
-  width: 100%;
+  width: fit-content;
 }
 .header img {
   width: 40vh;
