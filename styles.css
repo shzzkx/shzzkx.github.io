@@ -184,17 +184,16 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 2vw 0 0;
-  border: 2px solid black;
+  padding: 0 2vh;
 }
 .header-text {
-  margin: 0 0 0 4vh;
+  margin: 0 0 0 6vh;
   padding: 0;
   width: 100%;
 }
 .header img {
-  width: 35vh;
-  max-height: 40vh;
+  width: 40vh;
+  max-height: 45vh;
   aspect-ratio: 4 / 5;
   margin: auto; /*To center it vertically*/
   padding: 0;
@@ -216,12 +215,12 @@ header {
   font-family: Inter;
   font-size: 3vh;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   header {
-    height: 22em;
+    height: 24em;
   }
   .header-flex {
-    margin-top: -15vh;
+    margin-top: -25vh;
   }
   .header img {
     margin-top: 7.5vh;
@@ -229,18 +228,19 @@ header {
     max-height: 25vh;
   }
   .name {
+    margin-top: 12vh;
     font-size: 7.5vh;
   }
   .header p {
     font-size: 2.25vh;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   header {
-    height: 18em;
+    height: 19em;
   }
   .header-flex {
-    margin-top: -24vh;
+    margin-top: -32vh;
   }
   .header img {
     margin-top: 6vh;
@@ -248,13 +248,14 @@ header {
     max-height: 20vh;
   }
   .name {
+    margin-top: 10vh;
     font-size: 6vh;
   }
   .header p {
     font-size: 1.8vh;
   }
 }
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 725px) {
   header {
     height: 15em;
   }
@@ -264,10 +265,18 @@ header {
     width: 100%;
   }
   .header-flex {
-    margin-top: -30vh;
+    margin-top: -40vh;
   }
   .header img {
     display: none;
+  }
+}
+@media screen and (max-width: 725px) {
+  .name {
+    font-size: 5vh;
+  }
+  .header p {
+    font-size: 1.5vh;
   }
 }
 
@@ -321,7 +330,7 @@ main {
   z-index: 50;
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .projnav a {
     font-size: 4vh;
     z-index: 60;
@@ -333,7 +342,7 @@ main {
     font-size: 5vh;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .projnav a {
     font-size: 3vh;
   }
@@ -344,7 +353,7 @@ main {
     font-size: 4vh;
   }
 }
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 725px) {
   .projnav a {
     font-size: 2.5vh;
   }
@@ -537,7 +546,10 @@ show ongoing or finished*/
     width: 90%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
+  .tab {
+    padding: 0 5vh;
+  }
   .proj img {
     width: 100%;
   }
@@ -559,14 +571,12 @@ show ongoing or finished*/
   .proj .link a {
     padding-bottom: 3px;
   }
-}
-@media screen and (max-width: 800px) {
   .tab.vis {
     width: 70vw;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 725px) {
   .proj img {
     width: 100%;
   }
