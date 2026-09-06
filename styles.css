@@ -43,7 +43,7 @@ and maybe get rid of above media
   --accent_three: #432719;
   --text: #21211f;
   --footer: #432719;
-  --bg: #0c2920;
+  --bg: #878072;
   /*3F826D - aqua, 878472 - gray,
   709775 - light green, 3E5641 - dark green,
   1d473a - darker green, 0c2920 - darkest green*/
@@ -100,7 +100,8 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  background-color: var(--bg);
+  /*background-color: var(--bg);*/
+  background-image: url(images/green-leaves.jpg);
 }
 @media screen and (max-width: 600px) {
   body {
@@ -179,7 +180,7 @@ header {
   color: var(--white);
 }
 .header {
-  padding: 5vh;
+  padding: 10vh;
   /*Flexbox, columned, push content to bottom column*/
   display: flex;
   flex-direction: column;
@@ -213,7 +214,7 @@ header {
   font-family: Cabinet Grotesk, serif;
   font-weight: 500;
   font-size: 16vh;
-  margin: 10vh 0 0 0;
+  margin: 13vh 0 0 0;
   padding: 0;
   line-height: 1.15;
   /*add animation call here*/
@@ -224,6 +225,7 @@ header {
 .header p {
   font-size: 3vh;
   font-weight: 100;
+  margin-top: 0;
 }
 @media screen and (max-width: 1250px) {
   header {
