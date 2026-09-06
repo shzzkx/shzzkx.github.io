@@ -35,7 +35,8 @@ and maybe get rid of above media
   --body: #Eae6da;
   --body_unfocused: #fffaf2;
   --header: #21211f;
-  --topnav: #Cd3c2a;
+  --topnav: #Cd3c2a; /*fcde67*/
+  --topnav_text: #Eae6da;
   --topnav_focus: #432719;
   --projnav_text: #Cd3c2a;
   --accent: #Cd3c2a;
@@ -43,14 +44,12 @@ and maybe get rid of above media
   --accent_three: #432719;
   --text: #21211f;
   --footer: #432719;
-  --bg: #878072;
-  /*3F826D - aqua, 878472 - gray,
-  709775 - light green, 3E5641 - dark green,
-  1d473a - darker green, 0c2920 - darkest green*/
+  --submit_btn: #Cd3c2a;
+  --bg: #000000;
   --dark_white: #D6d6d6;
   --white: #f9faf4;
   --black: #21211f;
-  --gray: #333333;
+  --gray: #74776B; /*or: #74776B*/
   --about-me: #da9b68;
   
 
@@ -93,16 +92,39 @@ body {
   background-color: var(--body);
   color: var(--text);
   font-family: Satoshi, sans-serif;
-  margin: 7vh; /*Previously 7vh*/
+  margin: 7vh 17vh; /*Previously 7vh*/
   padding: 0;
-  box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.8);
   z-index: 1;
+  transition: all 0.75s ease-out;
 }
 html {
   scroll-behavior: smooth;
   /*background-color: var(--bg);*/
   background-image: url(images/green-leaves.jpg);
   background-attachment: fixed;
+  height: 100vh;
+}
+/*CURSORS*/
+html, .header, .contact {
+  cursor: url("cursors/cursor_white.png") 0 0, auto;
+}
+body {
+  cursor: url("cursors/cursor.png") 0 0, auto;
+}
+a {
+  cursor: url("cursors/cursor_focus.png") 0 0, auto;
+}
+.topnav a, .contact a {
+  cursor: url("cursors/cursor_focus_white.png") 0 0, auto;
+}
+.form input[type="submit"] {
+  cursor: url("cursors/cursor_focus_white.png") 0 0, auto;
+}
+@media screen and (max-width: 1600px) {
+  body {
+    margin: 7vh 7vh;
+  }
 }
 @media screen and (max-width: 600px) {
   body {
@@ -125,7 +147,7 @@ html {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: var(--body);
+  color: var(--topnav_text);
   text-align: center;
   padding: 2vh 2vw;
   text-decoration: none;
@@ -204,18 +226,19 @@ header {
   width: fit-content;
 }
 .header img {
-  width: 40vh;
-  max-height: 45vh;
-  aspect-ratio: 4 / 5;
+  width: 50vh;
+  max-height: 50vh;
+  aspect-ratio: 5 / 5;
   margin: auto; /*To center it vertically*/
   padding: 0;
   transition: all 0.5s ease-out;
+  border-radius: 50%;
 }
 .name {
-  font-family: Cabinet Grotesk, serif;
-  font-weight: 500;
+  font-family: Satoshi, Cabinet Grotesk, serif;
+  font-weight: 450;
   font-size: 16vh;
-  margin: 13vh 0 0 0;
+  margin: 7vh 0 0 0;
   padding: 0;
   line-height: 1.15;
   /*add animation call here*/
@@ -259,6 +282,7 @@ header {
     margin-top: 6vh;
     width: 17.5vh;
     max-height: 20vh;
+    display: none;
   }
   .name {
     margin-top: 10vh;
@@ -410,7 +434,7 @@ show ongoing or finished*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
+  width: 66vw;
   margin: 0 10vw;
 }
 .proj {
@@ -430,6 +454,7 @@ show ongoing or finished*/
   aspect-ratio: 5 / 3;
   object-fit: cover;
   object-position: left bottom;
+  border-radius: 10px;
 }
 .proj img.center {
   object-position: center;
@@ -681,16 +706,18 @@ textarea {
   margin: 0 0 5px 0;
   padding: 10px;
   font-size: 2vh;
+  font-family: Satoshi;
 }
 .form input::placeholder,
 textarea::placeholder {
   color: var(--accent_three);
+  font-family: Satoshi;
 }
 .form input[type="submit"] {
-  cursor: pointer;
   width: 100%;
-  background-color: var(--accent);
+  background-color: var(--submit_btn);
   color: var(--white);
+  font-family: Satoshi;
 }
 
 /* Responsive navigation menu - display contact on top of each other instead of next to each other (for mobile devices) */
