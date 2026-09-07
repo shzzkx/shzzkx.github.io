@@ -32,24 +32,31 @@ and maybe get rid of above media
   */
 
   
-  --body: #Eae6da;
-  --body_unfocused: #fffaf2;
-  --header: #21211f;
-  --topnav: #Cd3c2a; /*fcde67*/
-  --topnav_text: #Eae6da;
-  --topnav_focus: #432719;
-  --projnav_text: #Cd3c2a;
-  --accent: #Cd3c2a;
-  --accent_two: #432719;
-  --accent_three: #432719;
-  --text: #21211f;
-  --footer: #432719;
-  --submit_btn: #Cd3c2a;
-  --bg: #000000;
+  --body: #f2efe7;
+  --body_unfocused: #Eae6da; /*#fffaf2;*/
+  --header: #110e0f;
+  --topnav: #f8e38f; /*fcde67*/
+  --topnav_text: #110e0f;
+  --topnav_focus: #343436;
+  --topnav_focus_text: #f2efe7;
+  --projnav_text: #110e0f;
+  --accent: #f8e38f;
+  --accent_two: #343436;
+  --accent_three: #343436;
+  --text: #110e0f;
+  --lang: #f2efe7;
+  --lang_bg: #343436;
+  --link: #110e0f;
+  --link_bg: #f8e38f;
+  --link_bg_focus: #fcde67;
+  --footer: #343436;
+  --submit_btn: #110e0f;
+  --submit_btn_bg: #f8e38f;
+  --bg: #110e0f;
   --dark_white: #D6d6d6;
   --white: #f9faf4;
-  --black: #21211f;
-  --gray: #74776B; /*or: #74776B*/
+  --black: #110e0f;
+  --gray: #64675B;
   --about-me: #da9b68;
   
 
@@ -92,16 +99,16 @@ body {
   background-color: var(--body);
   color: var(--text);
   font-family: Satoshi, sans-serif;
-  margin: 7vh 17vh; /*Previously 7vh*/
+  margin: 7vh 17vh 7vh 17vh; /*Previously 7vh*/
   padding: 0;
-  box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.4);
   z-index: 1;
   transition: all 0.75s ease-out;
 }
 html {
   scroll-behavior: smooth;
-  /*background-color: var(--bg);*/
-  background-image: url(images/green-leaves.jpg);
+  background-color: var(--bg);
+  background-image: url("https://photo-cdn2.icons8.com/NV65eaRoFcPapdYGsAhqPnYXQZDV3NE8EpBqyNegGfQ/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi9kNjQ3N2NmZDIy/NDk0NTMwOTZlYWY3/NzQ5YzIzMGY4Yy5q/cGc.jpg");
   background-attachment: fixed;
   height: 100vh;
 }
@@ -112,14 +119,14 @@ html, .header, .contact {
 body {
   cursor: url("cursors/cursor.png") 0 0, auto;
 }
-a {
+a, .link {
   cursor: url("cursors/cursor_focus.png") 0 0, auto;
 }
 .topnav a, .contact a {
   cursor: url("cursors/cursor_focus_white.png") 0 0, auto;
 }
 .form input[type="submit"] {
-  cursor: url("cursors/cursor_focus_white.png") 0 0, auto;
+  cursor: url("cursors/cursor_point.png") 0 0, auto;
 }
 @media screen and (max-width: 1600px) {
   body {
@@ -141,7 +148,7 @@ a {
   z-index: 100;
   background-color: var(--topnav);
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(17, 14, 15, 0.2);
 }
 
 /* Style the links inside the navigation bar */
@@ -152,14 +159,14 @@ a {
   padding: 2vh 2vw;
   text-decoration: none;
   font-size: 2.5vh;
-  font-weight: 400;
+  font-weight: 450;
   transition: all 0.2s ease-out;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: var(--topnav_focus);
-  color: var(--white);
+  color: var(--topnav_focus_text);
 }
 
 /* Centered section inside the top navigation */
@@ -208,7 +215,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 35em; /*change height to navbar height + 50vh*/
+  height: 40em; /*change height to navbar height + 50vh*/
   position: relative;
   z-index: 5;
   text-align: left;
@@ -226,19 +233,19 @@ header {
   width: fit-content;
 }
 .header img {
-  width: 50vh;
-  max-height: 50vh;
-  aspect-ratio: 5 / 5;
+  width: 60vh;
+  max-height: 60vh;
+  aspect-ratio: 6 / 5;
   margin: auto; /*To center it vertically*/
   padding: 0;
   transition: all 0.5s ease-out;
-  border-radius: 50%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .name {
   font-family: Satoshi, Cabinet Grotesk, serif;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 16vh;
-  margin: 7vh 0 0 0;
+  margin: 6vh 0 0 0;
   padding: 0;
   line-height: 1.15;
   /*add animation call here*/
@@ -469,10 +476,11 @@ show ongoing or finished*/
   text-align: right;
 }
 .proj .title {
-  font-family: Cabinet Grotesk;
+  font-family: Satoshi, Cabinet Grotesk;
   margin: 0 0 0.2vh 0;
   padding: 0;
   font-size: 6vh;
+  font-weight: 500;
 }
 .proj hr {
   margin: 0 0 0.5vh 0;
@@ -500,8 +508,8 @@ show ongoing or finished*/
   margin: 0 0.25vw 0 0;
   padding: 0.4em 0.9em;
   font-size: 1.5vh;
-  background-color: var(--accent);
-  color: var(--white);
+  background-color: var(--lang_bg);
+  color: var(--lang);
   border-radius: 7px;
 }
 .proj.right .language {
@@ -528,7 +536,7 @@ show ongoing or finished*/
   margin: 0 0.5vw 0 0;
   padding: 0.4em 0.9em;
   font-size: 1.8vh;
-  background-color: var(--white);
+  background-color: var(--link_bg);
   border-radius: 7px;
   display: flex;
   flex-direction: row;
@@ -538,19 +546,19 @@ show ongoing or finished*/
   margin: 0 0 0 0.5vw;
 }
 .proj .link:hover {
-  background-color: var(--dark_white);
+  background-color: var(--link_bg_focus);
 }
 .proj .link a {
   text-decoration: none;
   text-align: center;
-  color: var(--accent);
+  color: var(--link);
 }
 .proj .link i {
   margin-right: 2.5px;
 }
 .proj .link svg {
   padding: 0;
-  fill: var(--accent);
+  fill: var(--link);
 }
 .proj .link svg.itchio {
   margin: 0 0 -5px -2.5px;
@@ -659,7 +667,7 @@ show ongoing or finished*/
   max-width: 600px;
 }
 .contact-column h1 {
-  font-family: Cabinet Grotesk;
+  font-family: Satoshi, Cabinet Grotesk;
   font-weight: 300;
   margin-top: 2.5vh;
   font-size: 12vh;
@@ -715,11 +723,10 @@ textarea::placeholder {
 }
 .form input[type="submit"] {
   width: 100%;
-  background-color: var(--submit_btn);
-  color: var(--white);
+  background-color: var(--submit_btn_bg);
+  color: var(--submit_btn);
   font-family: Satoshi;
 }
-
 /* Responsive navigation menu - display contact on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 1200px) {
   .contact-column h1 {
