@@ -97,7 +97,7 @@ body {
   background-color: var(--body);
   color: var(--text);
   font-family: Satoshi, sans-serif;
-  margin: 7vh 17vh 7vh 17vh; /*Previously 7vh*/
+  margin: 7vh 17vw 7vh 17vw; /*Previously 7vh*/
   padding: 0;
   box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.4);
   z-index: 1;
@@ -443,7 +443,7 @@ show ongoing or finished*/
   flex-direction: column;
   justify-content: center;
   width: 66vw;
-  margin: 0 10vw;
+  margin: 0 auto;
 }
 .proj {
   display: flex;
