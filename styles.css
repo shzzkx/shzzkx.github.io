@@ -31,9 +31,8 @@ and maybe get rid of above media
   --dark_yellow: #ffe270;
   */
 
-  
   --body: #f2efe7;
-  --body_unfocused: #Eae6da; /*#fffaf2;*/
+  --body_unfocused: #eae6da; /*#fffaf2;*/
   --header: #110e0f;
   --topnav: #f8e38f; /*fcde67*/
   --topnav_text: #110e0f;
@@ -53,12 +52,11 @@ and maybe get rid of above media
   --submit_btn: #110e0f;
   --submit_btn_bg: #f8e38f;
   --bg: #110e0f;
-  --dark_white: #D6d6d6;
+  --dark_white: #d6d6d6;
   --white: #f9faf4;
   --black: #110e0f;
-  --gray: #64675B;
+  --gray: #64675b;
   --about-me: #da9b68;
-  
 
   --rt: #ff0000;
   --ot: #ff9900;
@@ -113,16 +111,20 @@ html {
   height: 100vh;
 }
 /*CURSORS*/
-html, .header, .contact {
+html,
+.header,
+.contact {
   cursor: url("cursors/cursor_white.png") 0 0, auto;
 }
 body {
   cursor: url("cursors/cursor.png") 0 0, auto;
 }
-a, .link {
+a,
+.link {
   cursor: url("cursors/cursor_focus.png") 0 0, auto;
 }
-.topnav a, .contact a {
+.topnav a,
+.contact a {
   cursor: url("cursors/cursor_focus_white.png") 0 0, auto;
 }
 .form input[type="submit"] {
@@ -235,7 +237,7 @@ header {
 .header img {
   width: 60vh;
   max-height: 60vh;
-  aspect-ratio: 6 / 5;
+  aspect-ratio: 12 / 11;
   margin: auto; /*To center it vertically*/
   padding: 0;
   transition: all 0.5s ease-out;
@@ -321,7 +323,6 @@ header {
     font-size: 1.5vh;
   }
 }
-
 
 main {
   width: 100%;
@@ -498,14 +499,14 @@ show ongoing or finished*/
   justify-content: left;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 0 1vw 0;
+  margin: 0 0 1vh 0;
   padding: 0;
 }
 .proj.right .languages {
   justify-content: right;
 }
 .proj .language {
-  margin: 0 0.25vw 0 0;
+  margin: 0.5vh 0.25vw 0 0;
   padding: 0.4em 0.9em;
   font-size: 1.5vh;
   background-color: var(--lang_bg);
@@ -513,10 +514,10 @@ show ongoing or finished*/
   border-radius: 7px;
 }
 .proj.right .language {
-  margin: 0 0 0 0.25vw;
+  margin: 0.5vh 0 0 0.25vw;
 }
 .proj .desc {
-  margin: 0.9em 0 0.3em 0;
+  margin: 0.7em 0 0.7em 0;
   padding: 0;
   font-size: 2.5vh;
 }
@@ -526,7 +527,7 @@ show ongoing or finished*/
   justify-content: left;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  margin: 2vh 0 0 0;
   padding: 0;
 }
 .proj.right .links {
