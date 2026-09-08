@@ -442,7 +442,7 @@ show ongoing or finished*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 66vw;
+  width: 66vw; /*100vw - 17vw (body margin from html) * 2*/
   margin: 0 auto;
 }
 .proj {
@@ -456,7 +456,7 @@ show ongoing or finished*/
   justify-content: right;
 }
 .proj img {
-  width: 45vw;
+  width: 46vw; /*66vw (tab width) - 10vw (desired proj margin) * 2*/
   max-height: 18vw;
   margin: 0 3vw 0 0;
   aspect-ratio: 5 / 3;
