@@ -97,7 +97,9 @@ body {
   background-color: var(--body);
   color: var(--text);
   font-family: Satoshi, sans-serif;
-  margin: 2rem auto /*Previously 7vh*/
+  width: 90%;
+  max-width: 1600px;
+  margin: 2rem auto; /*Previously 7vh*/
   padding: 0;
   box-shadow: 0 0 3vh 0.25vh rgba(0, 0, 0, 0.4);
   z-index: 1;
@@ -132,11 +134,13 @@ a,
 }
 @media screen and (max-width: 1600px) {
   body {
-    margin: 7vh 7vh;
+    width: 90%;
+    margin: 2rem auto;
   }
 }
 @media screen and (max-width: 768px) {
   body {
+    width: 100%;
     margin: 0;
   }
 }
@@ -215,7 +219,7 @@ header {
 
 .header {
   min-height: 30rem;
-  padding: clamp(3rem, 8vw, 8rem);
+  padding: clamp(3rem, 8vw, 6rem);
   display: flex;
   align-items: center;
   position: relative;
@@ -223,7 +227,7 @@ header {
 }
 
 .header-flex {
-  width: min(1100px, 100%);
+  width: min(1600px, 100%);
   margin: 0 auto;
 
   display: grid;
