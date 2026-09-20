@@ -330,7 +330,7 @@ main {
   max-height: 360px;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  object-position: center;
+  object-position: bottom left;
 
   margin: 0;
   border-radius: 14px;
@@ -341,6 +341,14 @@ main {
 
 .proj.right img {
   grid-column: 2;
+}
+
+.proj img.center {
+  object-position: center;
+}
+
+.proj img.bottom-center {
+  object-position: bottom center;
 }
 
 .proj img:hover {
