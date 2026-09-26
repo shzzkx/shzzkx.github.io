@@ -633,6 +633,16 @@ main {
     padding: 64px 34px 72px;
   }
 
+  .header::before {
+    width: 370px;
+    height: 370px;
+  }
+
+  .header::after {
+    width: 320px;
+    height: 320px;
+  }
+  
   .header-flex {
     display: block;
   }
@@ -677,6 +687,20 @@ main {
     gap: 0;
   }
 
+  .header::before {
+    width: 320px;
+    height: 320px;
+  }
+
+  .header::after {
+    width: 270px;
+    height: 270px;
+  }
+  
+  .header-flex {
+    display: block;
+  }
+  
   .projnav {
     top: 60px;
   }
@@ -756,6 +780,16 @@ main {
   .header {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .header::before {
+    width: 220px;
+    height: 220px;
+  }
+
+  .header::after {
+    width: 179px;
+    height: 170px;
   }
 
   .projnav a {
