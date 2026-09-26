@@ -755,10 +755,6 @@ main {
     width: 100%;
     max-height: none;
   }
-
-  .proj.right img {
-    grid-column: 2;
-  }
   
   .proj .title {
     font-size: 2rem;
@@ -794,6 +790,10 @@ main {
 
   .projnav a {
     font-size: 0.66rem;
+  }
+
+  .proj.right img {
+    order: -1;
   }
 
   .tab.vis {
