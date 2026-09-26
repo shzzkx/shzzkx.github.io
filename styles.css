@@ -732,6 +732,10 @@ main {
     max-height: none;
   }
 
+  .proj.right img {
+    grid-column: 2;
+  }
+  
   .proj .title {
     font-size: 2rem;
   }
