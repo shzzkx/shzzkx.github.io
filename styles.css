@@ -84,6 +84,7 @@ a {
   color: var(--nav-ink);
   border-bottom: 1px solid rgba(23, 23, 23, 0.12);
   border-radius: 22px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .topnav > a,
