@@ -28,10 +28,8 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: none;
   background-color: var(--page-bg);
-  background-image: radial-gradient(
-    rgba(248, 227, 143, 0.25),
-    transparent 0.5px
-  );
+  background-image: radial-gradient(rgba(248, 227, 143, 0.25),
+      transparent 0.5px);
   background-size: 20px 20px;
   /* Botany background
   background-image: url("https://photo-cdn2.icons8.com/NV65eaRoFcPapdYGsAhqPnYXQZDV3NE8EpBqyNegGfQ/rs:fit:1608:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi9kNjQ3N2NmZDIy/NDk0NTMwOTZlYWY3/NzQ5YzIzMGY4Yy5q/cGc.jpg");
@@ -87,7 +85,11 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.topnav > a,
+.topnav.scrolled {
+  border-radius: 0;
+}
+
+.topnav>a,
 .topnav-right a {
   display: inline-flex;
   align-items: center;
@@ -104,12 +106,12 @@ a {
   transition: background 180ms ease, transform 180ms ease;
 }
 
-.topnav > a {
+.topnav>a {
   font-size: 1.05rem;
   font-weight: 600;
 }
 
-.topnav > a:hover,
+.topnav>a:hover,
 .topnav-right a:hover {
   background: var(--nav-hover);
   transform: translateY(-1px);
@@ -123,6 +125,43 @@ a {
 
 .topnav-centered {
   display: none;
+}
+
+.topnav {
+  min-height: 70px;
+  padding: 0 clamp(16px, 4vw, 52px);
+  background: var(--nav);
+  border-bottom: 1px solid var(--line);
+  border-radius: 18px 18px 0 0;
+  box-shadow: none;
+}
+
+.topnav > a,
+.topnav-right a {
+  min-height: 42px;
+  padding: 0 15px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+.topnav > a {
+  padding-left: 0;
+  font-size: 1.08rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.topnav > a:hover,
+.topnav-right a:hover {
+  background: var(--nav-hover);
+  transform: none;
+}
+
+.topnav .home-link:hover {
+  background: var(--nav-hover);
+}
+.topnav .home-link {
+  padding-left: 15px;
 }
 
 /* ---------- Header ---------- */
@@ -154,14 +193,12 @@ header {
   background: var(--nav);
   opacity: 0.42;
   pointer-events: none;
-  clip-path: polygon(
-  50% 0%,
-  100% 25%,
-  100% 75%,
-  50% 100%,
-  0% 75%,
-  0% 25%
-);
+  clip-path: polygon(50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%);
 }
 
 .header::after {
@@ -174,14 +211,12 @@ header {
   background: var(--nav);
   opacity: 0.42;
   pointer-events: none;
-  clip-path: polygon(
-  50% 0%,
-  100% 25%,
-  100% 75%,
-  50% 100%,
-  0% 75%,
-  0% 25%
-);
+  clip-path: polygon(50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%);
 }
 
 .header-flex {
@@ -619,7 +654,7 @@ main {
     min-height: 64px;
   }
 
-  .topnav > a,
+  .topnav>a,
   .topnav-right a {
     min-height: 48px;
     padding: 0 12px;
@@ -643,7 +678,7 @@ main {
     width: 320px;
     height: 320px;
   }
-  
+
   .header-flex {
     display: block;
   }
@@ -674,13 +709,13 @@ main {
     min-height: 60px;
   }
 
-  .topnav > a,
+  .topnav>a,
   .topnav-right a {
     padding: 0 9px;
     font-size: 0.82rem;
   }
 
-  .topnav > a {
+  .topnav>a {
     font-size: 0.9rem;
   }
 
@@ -697,11 +732,11 @@ main {
     width: 270px;
     height: 270px;
   }
-  
+
   .header-flex {
     display: block;
   }
-  
+
   .projnav {
     top: 60px;
   }
@@ -756,7 +791,7 @@ main {
     width: 100%;
     max-height: none;
   }
-  
+
   .proj .title {
     font-size: 2rem;
   }
@@ -769,7 +804,8 @@ main {
 }
 
 @media (max-width: 420px) {
-  .topnav > a,
+
+  .topnav>a,
   .topnav-right a {
     padding: 0 7px;
   }
