@@ -8,13 +8,13 @@ document.addEventListener("click", (ev) => {
 */
 
 // Get references to elements
-const sites = document.getElementById("sites-btn");
-const games = document.getElementById("games-btn");
-const other = document.getElementById("other-btn");
+const soft = document.getElementById("software-btn");
+const elec = document.getElementById("electronics-btn");
+const mech = document.getElementById("mechanical-btn");
 
-const sites_tab = document.getElementById("sites");
-const games_tab = document.getElementById("games");
-const other_tab = document.getElementById("other");
+const soft_tab = document.getElementById("software");
+const elec_tab = document.getElementById("electronics");
+const mech_tab = document.getElementById("mechanical");
 
 //if project_types gets too big,
 //loop over all for click event,
@@ -24,29 +24,29 @@ const other_tab = document.getElementById("other");
 
 // Function for showing a tab
 function showTab(nav, tab) {
-  sites.classList.remove("active");
-  games.classList.remove("active");
-  other.classList.remove("active");
+  soft.classList.remove("active");
+  elec.classList.remove("active");
+  mech.classList.remove("active");
 
-  sites_tab.classList.remove("vis");
-  games_tab.classList.remove("vis");
-  other_tab.classList.remove("vis");
+  soft_tab.classList.remove("vis");
+  elec_tab.classList.remove("vis");
+  mech_tab.classList.remove("vis");
 
   nav.classList.add("active");
   tab.classList.add("vis");
 }
 
 // Default project type open
-showTab(sites, sites_tab);
+showTab(soft, soft_tab);
 
-sites.addEventListener("click", () => {
-  showTab(sites, sites_tab);
+soft.addEventListener("click", () => {
+  showTab(soft, soft_tab);
 });
 
-games.addEventListener("click", () => {
-  showTab(games, games_tab);
+elec.addEventListener("click", () => {
+  showTab(elec, elec_tab);
 });
 
-other.addEventListener("click", () => {
-  showTab(other, other_tab);
+mech.addEventListener("click", () => {
+  showTab(mech, mech_tab);
 });
