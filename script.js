@@ -24,40 +24,51 @@ const mech_tab = document.getElementById("mechanical");
 
 // Function for showing a tab
 function showTab(nav, tab) {
-  soft.classList.remove("active");
-  elec.classList.remove("active");
-  mech.classList.remove("active");
+  // Remove the active state from all navigation links
+  [soft, elec, mech].forEach((button) => {
+    button.classList.remove("active");
+  });
 
-  soft_tab.classList.remove("vis");
-  elec_tab.classList.remove("vis");
-  mech_tab.classList.remove("vis");
+  // Hide all project sections
+  [soft_tab, elec_tab, mech_tab].forEach((section) => {
+    section.classList.remove("vis");
+  });
 
+  // Activate the selected navigation link and section
   nav.classList.add("active");
   tab.classList.add("vis");
 }
 
-// Default project type open
-showTab(soft, soft_tab);
-
-soft.addEventListener("click", () => {
+// Set up the project tabs
+if (soft && elec && mech && soft_tab && elec_tab && mech_tab) {
   showTab(soft, soft_tab);
-});
 
-elec.addEventListener("click", () => {
-  showTab(elec, elec_tab);
-});
+  soft.addEventListener("click", (event) => {
+    event.preventDefault();
+    showTab(soft, soft_tab);
+  });
 
-mech.addEventListener("click", () => {
-  showTab(mech, mech_tab);
-});
+  elec.addEventListener("click", (event) => {
+    event.preventDefault();
+    showTab(elec, elec_tab);
+  });
+
+  mech.addEventListener("click", (event) => {
+    event.preventDefault();
+    showTab(mech, mech_tab);
+  });
+}
+else {
+  console.error("One or more project tab elements could not be found.");
+}
 
 // Scroll event listener to add/remove topnav border radius based on scroll position
 const topnav = document.querySelector('.topnav');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 12.5) {
-      topnav.classList.add('scrolled');
-    } else {
-      topnav.classList.remove('scrolled');
-    }
-  });
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 12.5) {
+    topnav.classList.add('scrolled');
+  } else {
+    topnav.classList.remove('scrolled');
+  }
+});
