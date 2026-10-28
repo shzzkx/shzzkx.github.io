@@ -60,4 +60,8 @@ const topnav = document.querySelector('.topnav');
     } else {
       topnav.classList.remove('scrolled');
     }
+<<<<<<< HEAD
   });
+=======
+  });
+>>>>>>> aa7e08653169834235987f11a0d2167bfadb5c51
