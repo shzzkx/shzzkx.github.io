@@ -1,12 +1,3 @@
-// Make the ball move to a certain position:
-/*
-const f = document.getElementById("ball");
-document.addEventListener("click", (ev) => {
-  f.style.transform = `translateY(${ev.clientY - 25}px)`;
-  f.style.transform += `translateX(${ev.clientX - 25}px)`;
-});
-*/
-
 // Get references to elements
 const soft = document.getElementById("software-btn");
 const elec = document.getElementById("electronics-btn");
@@ -60,8 +51,4 @@ const topnav = document.querySelector('.topnav');
     } else {
       topnav.classList.remove('scrolled');
     }
-<<<<<<< HEAD
   });
-=======
-  });
->>>>>>> aa7e08653169834235987f11a0d2167bfadb5c51
