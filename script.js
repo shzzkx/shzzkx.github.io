@@ -50,3 +50,14 @@ elec.addEventListener("click", () => {
 mech.addEventListener("click", () => {
   showTab(mech, mech_tab);
 });
+
+// Scroll event listener to add/remove topnav border radius based on scroll position
+const topnav = document.querySelector('.topnav');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 12.5) {
+      topnav.classList.add('scrolled');
+    } else {
+      topnav.classList.remove('scrolled');
+    }
+  });

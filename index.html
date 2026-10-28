@@ -8,7 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The homepage" />
   <title>Portfolio for Shiza Khan</title>
+  <!--STYLESHEETS-->
   <link rel="stylesheet" href="styles.css" />
+  <!--<link rel="stylesheet" href="styles-enhanced.css" /> -->
+
   <!--ICONS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--FONTS (satoshi, cabinet grotesk, bevellier)-->
@@ -31,7 +34,7 @@
     </div>
 
     <!-- Left-aligned links (default) -->
-    <a href="#home">Shiza Khan</a>
+    <a class="home-link" href="#home">Shiza Khan</a>
 
     <!-- Right-aligned links -->
     <div class="topnav-right">
@@ -84,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div id="software-two" class="proj software right">
+        <div id="software-two" class="proj software left">
           <div class="info">
             <h2 class="title">Murder Mystery Game</h2>
             <hr>
@@ -112,34 +115,7 @@
           </div>
           <img src="images/mmg_thumbnail.jpg" />
         </div>
-        <div id="software-three" class="proj software left">
-          <img src="images/fsf_thumbnail.jpg" />
-          <div class="info">
-            <h2 class="title">First Step Finance</h2>
-            <hr>
-            <div class="languages">
-              <h3 class="language">HTML</h3>
-              <h3 class="language">CSS</h3>
-              <h3 class="language">JS</h3>
-            </div>
-            <p class="desc">
-              Created for Hackonomics 2025, First Step Finance aids beginners in pursuing financial literacy through
-              educational material.
-            </p>
-            <div class="links">
-              <h3 class="link"><a href="https://github.com/shzzkx/First-Step-Finance"><i class="fa fa-github"
-                    style="font-size:15px"></i>&#0009;GitHub</a></h3>
-              <h3 class="link"><a href="https://www.youtube.com/watch?v=MJfsiOaO5KU"><i class="fa fa-youtube-play"
-                    style="font-size:15px"></i>&#0009;YouTube</a></h3>
-              <h3 class="link"><a href="https://shzzkx.github.io/First-Step-Finance/"><svg class="website"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M351.9 280l-190.9 0c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zM160.9 232l190.9 0C349 167.5 334.7 108.1 314.4 64.6 303 40.2 290.7 22.8 279.3 12.2 268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4zm-48 0C116.4 146.4 138.5 66.9 170.8 14.7 78.7 47.3 10.9 131.2 1.5 232l111.4 0zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3L1.5 280zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3l-111.4 0zm111.4-48C501.9 131.2 434.1 47.3 342 14.7 374.3 66.9 396.4 146.4 399.9 232l111.4 0z" />
-                  </svg>&#0009;Website</a></h3>
-            </div>
-          </div>
-        </div>
-        <div id="software-four" class="proj software left">
+        <div id="software-three" class="proj software right">
           <div class="info">
             <h2 class="title">This Portfolio Website</h2>
             <hr>
@@ -153,7 +129,7 @@
               web development skills.
             </p>
             <div class="links">
-              <h3 class="link"><a href="https://github.com/"><i class="fa fa-github"
+              <h3 class="link"><a href="https://github.com/shzzkx/shzzkx.github.io"><i class="fa fa-github"
                     style="font-size:15px"></i>&#0009;GitHub</a></h3>
             </div>
           </div>
@@ -171,15 +147,14 @@
               <h3 class="language">C++</h3>
             </div>
             <p class="desc">
-              A Pong game I implemented on an Arduino board using an OLED display and push buttons in a team of 2. I was reponsible for
+              A Pong game I implemented on an Arduino board using an OLED display and push buttons in a team of 2. I was
+              reponsible for
               programming the game logic, including the ball movement, collision detection, and scoring system.
             </p>
-            <!-- Add GitHub link when you get repo set up
             <div class="links">
-              <h3 class="link"><a href="https://github.com/shzzkx/Smart-Home-Automation-System"><i class="fa fa-github"
+              <h3 class="link"><a href="https://github.com/shzzkx/Arduino-Pong-Game"><i class="fa fa-github"
                     style="font-size:15px"></i>&#0009;GitHub</a></h3>
             </div>
-            -->
           </div>
         </div>
         <div id="electronics-two" class="proj electronics right">
@@ -195,7 +170,7 @@
               module, and buzzer to simulate an office lighting and alarm system.
             </p>
             <div class="links">
-              <h3 class="link"><a href="https://github.com/shzzkx/Smart-Home-Automation-System"><i class="fa fa-github"
+              <h3 class="link"><a href="https://github.com/shzzkx/Smart-Office-Security-System"><i class="fa fa-github"
                     style="font-size:15px"></i>&#0009;GitHub</a></h3>
             </div>
           </div>
@@ -217,7 +192,7 @@
             <p class="desc">
               A speaker box cabinet increasing the sound output of a 97.0 dB driver to 123.9 dB, which I designed in a
               team of 4. We researched and incorporated cabinet design principles into a prototype, then conducted tests
-              to determine what parameters maximised sound output, integrating this parameters into the control loop.
+              to determine what parameters maximised sound output, integrating these parameters into the control loop.
             </p>
             <!-- Add when you get Github repo set up
                 <div class="links">
