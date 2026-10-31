@@ -303,6 +303,10 @@ a { color: inherit; }
   transform: translate(-12px, -15px) scale(0.8); /* negative x = left, negative y = up */
 }
 
+/* ---------- For Image Gallery ---------- */
+.gallery { display: grid; gap: 10px; }
+.proj img.contain { object-fit: contain; background: #fff; }
+
 .title {
   margin: 0;
   font-size: clamp(1.3rem, 2.2vw, 1.8rem);
