@@ -326,10 +326,10 @@ a {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  font-family: Fraunces, system-ui, -apple-system, "Segoe UI", sans-serif;
   gap: 12px;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--ink);
-  font-family: Fraunces, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 .results-head h2 {
@@ -402,10 +402,10 @@ a {
 
 .title {
   margin: 0;
+  font-family: Fraunces, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: clamp(1.3rem, 2.2vw, 1.8rem);
   line-height: 1.1;
   letter-spacing: -0.03em;
-  font-family: Fraunces, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 .discs {
@@ -484,10 +484,10 @@ a {
 
 .contact h2 {
   margin: 0 0 12px;
+  font-family: Fraunces, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: clamp(2.6rem, 6vw, 5rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
-  font-family: Fraunces, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 .contact-line {
