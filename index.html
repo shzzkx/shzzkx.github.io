@@ -78,6 +78,89 @@
           <h2 id="results-title">All projects</h2>
           <span id="results-count" aria-live="polite"></span>
         </div>
+        
+        <article class="proj" data-disc="mechanical electronics software">
+          <img class="center" src="images/speaker_box_thumbnail.jpg" alt="Speaker box prototype" />
+          <div class="info">
+            <h3 class="title">Speaker Box Project</h3>
+            <div class="discs"><span class="mechanical">Mechanical</span><span
+                class="electronics">Electronics</span><span class="software">Software</span></div>
+            <p class="tech">AutoCAD, Seeeduino Nano, C++</p>
+            <p class="desc">In a team of 4, I designed a bass-reflex speaker cabinet to get the loudest sound from a
+              given driver and one sheet of cardboard. I found the angle for a slanted top panel that reflects more
+              sound into the port, while my teammates drafted the cutouts in AutoCAD. We then tested waveforms and
+              frequencies with measurement distance and background noise held constant, and found a 100 Hz sine wave
+              gave the loudest output, 120.3 dB compared with the driver's 97.0 dB baseline. Our cutting errors stacked
+              up and the panels didn't fit cleanly, which taught me to design in manufacturing tolerances for the
+              future.
+            </p>
+          </div>
+        </article>
+
+        <article class="proj" data-disc="electronics software">
+          <div class="gallery">
+            <img class="center" src="images/office_secur_sys_thumbnail.png" alt="Smart office security circuit" />
+            <img class="center" src="images/office_secur_sys_tinkercad.png" alt="Smart office security circuit" />
+          </div>
+          <div class="info">
+            <h3 class="title">Smart Office Security System</h3>
+            <div class="discs"><span class="electronics">Electronics</span><span class="software">Software</span></div>
+            <p class="tech">Arduino UNO R4, C++</p>
+            <p class="desc">An Arduino-based circuit where I integrated a keypad, sound sensor, push button, RGB
+              lighting, laser module, and buzzer to simulate an office lighting and alarm system. I drew the circuit in
+              Tinkercad, then built and tested it on a breadboard. The sound sensor caused false alarms, so I logged its
+              raw readings in quiet and noisy conditions, measured its real output range, and set the alarm threshold
+              from those values.
+            </p>
+            <div class="links">
+              <a href="https://github.com/shzzkx/Smart-Office-Security-System"><i class="fa fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-disc="mechanical">
+          <div class="gallery">
+            <img class="center" src="images/mousetrap_car.png" alt="Mousetrap Car Full View" />
+            <img class="center" src="images/mousetrap_car_closeup.png" alt="Mousetrap Car Close Up" />
+            <img class="center" src="images/mousetrap_car_closeup_2.png" alt="Mousetrap Car Close Up" />
+          </div>
+          <div class="info">
+            <h3 class="title">The Aurum Theorem: Mousetrap Car</h3>
+            <div class="discs"><span class="mechanical">Mechanical</span></div>
+            <p class="tech">Prototyping, testing, mechanical design</p>
+            <p class="desc">I designed and built a car powered only by a single mousetrap for a grade 11 physics
+              project. I tested 10+ prototypes spanning 4 design concepts (using cardboard, popsicle sticks, and 2
+              hybrid designs) and chose a design made only of popsicle sticks based on
+              performance data. I researched and tested drivetrain lengths, materials and joint attachments to transfer
+              energy more efficiently, and more than doubled the car's travel distance, from 7.16 m to 16.92 m. The
+              final car drives straight within a 0.6 m-wide lane. This was my most challenging high school project, but
+              it was also the most rewarding, both in terms of the distance I achieved and what I learned: how to apply
+              physics and material properties to mechanical design, and how to improve with each prototype.
+            </p>
+            <div class="links">
+              <a href="https://drive.google.com/file/d/1TEIYNaPeoQEFDTK4lV05CzyiV1xtfwYy/view" rel="noopener"
+                target="_blank"><i class="fa fa-file-pdf-o"></i> Brochure</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-disc="electronics software">
+          <img class="center" src="images/arduino_pong_thumbnail.jpg" alt="Arduino Pong game on an OLED display" />
+          <div class="info">
+            <h3 class="title">Arduino Pong Game</h3>
+            <div class="discs"><span class="electronics">Electronics</span><span class="software">Software</span></div>
+            <p class="tech">Arduino UNO R4, C++</p>
+            <p class="desc">A Pong game I implemented on an Arduino board using an OLED display and push buttons in a
+              team of 2. I was responsible for programming the game logic, including the ball movement, collision
+              detection, and scoring system. When the ball passed through paddles, we logged coordinates over the serial
+              monitor and found that at high speeds, the ball skipped past the paddle between frames. We fixed this
+              issue by
+              capping the ball's speed.</p>
+            <div class="links">
+              <a href="https://github.com/shzzkx/Arduino-Pong-Game"><i class="fa fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
 
         <article class="proj" data-disc="software">
           <img class="center" src="images/plink_thumbnail.png" alt="Plink game screenshot" />
@@ -107,77 +190,6 @@
               <a href="https://www.youtube.com/watch?v=DCZ0JbUE4MY"><i class="fa fa-youtube-play"></i> YouTube</a>
               <a href="https://shzzkx.itch.io/murder-mystery-game"><i class="fa fa-gamepad"></i> Itch.io</a>
             </div>
-          </div>
-        </article>
-
-        <article class="proj" data-disc="software">
-          <img class="center icon-img" src="icons/favicon.svg" alt="Portfolio website icon" />
-          <div class="info">
-            <h3 class="title">This Portfolio Website</h3>
-            <div class="discs"><span class="software">Software</span></div>
-            <p class="tech">HTML, CSS, JS</p>
-            <p class="desc">This portfolio website was created in the summer of 2026 to showcase my technical projects
-              and refine my web development skills.</p>
-            <div class="links">
-              <a href="https://github.com/shzzkx/shzzkx.github.io"><i class="fa fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="proj" data-disc="electronics software">
-          <img class="center" src="images/arduino_pong_thumbnail.jpg" alt="Arduino Pong game on an OLED display" />
-          <div class="info">
-            <h3 class="title">Arduino Pong Game</h3>
-            <div class="discs"><span class="electronics">Electronics</span><span class="software">Software</span></div>
-            <p class="tech">Arduino UNO R4, C++</p>
-            <p class="desc">A Pong game I implemented on an Arduino board using an OLED display and push buttons in a
-              team of 2. I was responsible for programming the game logic, including the ball movement, collision
-              detection, and scoring system. When the ball passed through paddles, we logged coordinates over the serial
-              monitor and found that at high speeds, the ball skipped past the paddle between frames. We fixed this
-              issue by
-              capping the ball's speed.</p>
-            <div class="links">
-              <a href="https://github.com/shzzkx/Arduino-Pong-Game"><i class="fa fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="proj" data-disc="electronics software">
-          <div class="gallery">
-            <img class="center" src="images/office_secur_sys_thumbnail.png" alt="Smart office security circuit" />
-            <img class="center" src="images/office_secur_sys_tinkercad.png" alt="Smart office security circuit" />
-          </div>
-          <div class="info">
-            <h3 class="title">Smart Office Security System</h3>
-            <div class="discs"><span class="electronics">Electronics</span><span class="software">Software</span></div>
-            <p class="tech">Arduino UNO R4, C++</p>
-            <p class="desc">An Arduino-based circuit where I integrated a keypad, sound sensor, push button, RGB
-              lighting, laser module, and buzzer to simulate an office lighting and alarm system. I drew the circuit in
-              Tinkercad, then built and tested it on a breadboard. The sound sensor caused false alarms, so I logged its
-              raw readings in quiet and noisy conditions, measured its real output range, and set the alarm threshold
-              from those values.
-            </p>
-            <div class="links">
-              <a href="https://github.com/shzzkx/Smart-Office-Security-System"><i class="fa fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="proj" data-disc="mechanical electronics software">
-          <img class="center" src="images/speaker_box_thumbnail.jpg" alt="Speaker box prototype" />
-          <div class="info">
-            <h3 class="title">Speaker Box Project</h3>
-            <div class="discs"><span class="mechanical">Mechanical</span><span
-                class="electronics">Electronics</span><span class="software">Software</span></div>
-            <p class="tech">AutoCAD, Seeeduino Nano, C++</p>
-            <p class="desc">In a team of 4, I designed a bass-reflex speaker cabinet to get the loudest sound from a
-              given driver and one sheet of cardboard. I found the angle for a slanted top panel that reflects more
-              sound into the port, while my teammates drafted the cutouts in AutoCAD. We then tested waveforms and
-              frequencies with measurement distance and background noise held constant, and found a 100 Hz sine wave
-              gave the loudest output, 120.3 dB compared with the driver's 97.0 dB baseline. Our cutting errors stacked
-              up and the panels didn't fit cleanly, which taught me to design in manufacturing tolerances for the
-              future.
-            </p>
           </div>
         </article>
 
@@ -211,28 +223,15 @@
           </div>
         </article>
 
-        <article class="proj" data-disc="mechanical">
-          <div class="gallery">
-            <img class="center" src="images/mousetrap_car.png" alt="Mousetrap Car Full View" />
-            <img class="center" src="images/mousetrap_car_closeup.png" alt="Mousetrap Car Close Up" />
-            <img class="center" src="images/mousetrap_car_closeup_2.png" alt="Mousetrap Car Close Up" />
-          </div>
+        <article class="proj" data-disc="software">
+          <img class="center icon-img" src="icons/favicon.svg" alt="Portfolio website icon" />
           <div class="info">
-            <h3 class="title">The Aurum Theorem: Mousetrap Car</h3>
-            <div class="discs"><span class="mechanical">Mechanical</span></div>
-            <p class="tech">Prototyping, testing, mechanical design</p>
-            <p class="desc">I designed and built a car powered only by a single mousetrap for a grade 11 physics
-              project. I tested 10+ prototypes spanning 4 design concepts (using cardboard, popsicle sticks, and 2
-              hybrid designs) and chose a design made only of popsicle sticks based on
-              performance data. I researched and tested drivetrain lengths, materials and joint attachments to transfer
-              energy more efficiently, and more than doubled the car's travel distance, from 7.16 m to 16.92 m. The
-              final car drives straight within a 0.6 m-wide lane. This was my most challenging high school project, but
-              it was also the most rewarding, both in terms of the distance I achieved and what I learned: how to apply
-              physics and material properties to mechanical design, and how to improve with each prototype.
-            </p>
+            <h3 class="title">This Portfolio Website</h3>
+            <div class="discs"><span class="software">Software</span></div>
+            <p class="tech">HTML, CSS, JS</p>
+            <p class="desc">I designed this portfolio around the idea of engineering as a puzzle and built it with HTML, CSS and JavaScript, using no frameworks.</p>
             <div class="links">
-              <a href="https://drive.google.com/file/d/1TEIYNaPeoQEFDTK4lV05CzyiV1xtfwYy/view" rel="noopener"
-                target="_blank"><i class="fa fa-file-pdf-o"></i> Brochure</a>
+              <a href="https://github.com/shzzkx/shzzkx.github.io"><i class="fa fa-github"></i> GitHub</a>
             </div>
           </div>
         </article>
