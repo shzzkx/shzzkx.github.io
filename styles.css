@@ -65,8 +65,10 @@ html::-webkit-scrollbar {
 }
 
 body {
-  width: min(1280px, calc(100% - 48px));
-  margin: 24px auto 48px;
+  /*width: min(1280px, calc(100% - 48px));
+  margin: 24px auto 48px;*/
+  width: 100%;
+  margin: 0;
   background: var(--surface);
   color: var(--ink);
   font-family: Satoshi, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -102,7 +104,7 @@ a {
   background: var(--nav);
   color: var(--on-nav);
   border-bottom: 1px solid var(--line);
-  border-radius: 22px 22px 0 0;
+  /*border-radius: 22px 22px 0 0;*/
 }
 
 .topnav.scrolled {
@@ -262,7 +264,7 @@ a {
   position: sticky;
   top: max(90px, calc(50vh - var(--nav-h, 480px) / 2));
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
   overflow: visible;
 }
@@ -475,7 +477,7 @@ a {
   background: var(--surface-2);
   color: var(--ink);
   border-top: 1px solid var(--line);
-  border-radius: 0 0 22px 22px;
+  /*border-radius: 0 0 22px 22px;*/
 }
 
 .contact-column {
